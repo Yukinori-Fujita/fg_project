@@ -1,0 +1,23 @@
+/* headerの部分 */
+.main-title{
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+
+/* section1 */
+.container{
+    background-image: url(./img/okinawa-shiga.jpeg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container li{
+    font-size: 20px;
+}
