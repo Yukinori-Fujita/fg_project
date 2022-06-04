@@ -199,7 +199,7 @@ h2{
 }
 
 .box::after{
-  content: 'コンテンツ内容';
+  content: '';
   position: absolute;
   font-size: 40px;
   top: 50%;
@@ -208,13 +208,40 @@ h2{
 }
 
 #box1{
-  background-color: turquoise;
+  background-image: url(./img/syuri-castle.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #box2{
-  background-color: rgb(150, 121, 204);
+  background-image: url(./img/okinawasoba.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #box3{
-  background-color: rgb(64, 224, 131);
+  background-image: url(./img/okinawaumi.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#box4{
+  background-image: url(./img/hikone_castle.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#box5{
+  background-image: url(./img/chanponn.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#box6{
+  background-image: url(./img/biwako.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .current{
