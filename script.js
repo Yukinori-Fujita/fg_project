@@ -1,5 +1,5 @@
 $(function(){
-// タイプライター
+// タイプライター section1
 // jsの場合
 const typewriter = (param) => {
     let el = document.querySelector(param.el);
@@ -44,7 +44,7 @@ typewriter({
 //         });
 //     });
 
-
+// section2
 
   // ここより上で描く
 })
