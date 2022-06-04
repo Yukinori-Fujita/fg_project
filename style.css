@@ -62,6 +62,7 @@
     margin: 0;
 }
 
+/* 文字の点滅 */
 /* #container span {
     opacity: 1;
     -webkit-animation: blink 0.3s infinite;
