@@ -1,5 +1,5 @@
 /* headerの部分 */
-.main-title{
+.main-title {
     text-align: center;
     padding: 28px;
     font-size: 28px;
@@ -9,7 +9,7 @@
 }
 
 /* section1 */
-.container{
+#container {
     background-image: url(./img/okinawa-shiga.jpeg);
     height: 100vh;
     width: 100%;
@@ -19,30 +19,69 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 28px;
+    line-height: 1.5;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: 2px 2px 5px 0px rgba(200, 200, 200, 1);
+    font-family: "Times New Roman";
+}
+
+#typewriter::after {
+    content: "|";
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 
 /* タイプライターできない！!!!!!!!!!!!!!!!!!!*/
 
-.container li {position: absolute;top: 50%;left: 50%;-ms-transform: translate(-50%,-50%);-webkit-transform : translate(-50%,-50%);transform : translate(-50%,-50%);text-align: center;color: rgb(4, 4, 4);opacity: 0.75;font-size: 2.4em;margin: 0;}
-.container li  {
-  opacity: 1;
-  -webkit-animation: blink 0.3s infinite;
-  -moz-animation: blink 0.3s infinite;
-  animation: blink 0.5s infinite;
-  animation-direction: alternate;
+#tyepwriter span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(4, 4, 4);
+    opacity: 0.75;
+    font-size: 50em;
+    margin: 0;
 }
+
+/* #container span {
+    opacity: 1;
+    -webkit-animation: blink 0.3s infinite;
+    -moz-animation: blink 0.3s infinite;
+    animation: blink 0.5s infinite;
+    animation-direction: alternate;
+} */
 
 @keyframes blink {
     100% {
         opacity: 0;
     }
 }
+
 @-webkit-keyframes blink {
     100% {
         opacity: 0;
     }
 }
+
 @-moz-keyframes blink {
     100% {
         opacity: 0;
@@ -60,7 +99,8 @@ footer {
     background: rgb(255, 255, 255);
     position: relative;
 }
-    footer p{
+
+footer p {
     font-family: 'Kiwi Maru', serif;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 17px;
@@ -68,7 +108,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform : translate(-50%,-50%);
-    transform : translate(-50%,-50%);
-  }  
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
