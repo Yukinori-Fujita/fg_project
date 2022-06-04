@@ -19,12 +19,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 28px;
+    /* padding: 28px;
     line-height: 1.5;
     border: 1px solid #ffffff;
     border-radius: 5px;
     background-color: transparent;
-    box-shadow: 2px 2px 5px 0px rgba(200, 200, 200, 1);
+    box-shadow: 2px 2px 5px 0px rgba(200, 200, 200, 1); */
+    font-size: 30px;
     font-family: "Times New Roman";
 }
 
@@ -58,7 +59,7 @@
     text-align: center;
     color: rgb(4, 4, 4);
     opacity: 0.75;
-    font-size: 50em;
+    font-size: 30px;
     margin: 0;
 }
 
@@ -71,7 +72,7 @@
     animation-direction: alternate;
 } */
 
-@keyframes blink {
+/* @keyframes blink {
     100% {
         opacity: 0;
     }
@@ -87,7 +88,7 @@
     100% {
         opacity: 0;
     }
-}
+} */
 
 
 
