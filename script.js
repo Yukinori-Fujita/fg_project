@@ -43,7 +43,7 @@ $(function () {
     //             },splitLength*delaySpeed+fadeSpeed);
     //         });
     //     });
-
+    
     // section3
     $(".tab-list li a").on("click", function (event) {
         event.preventDefault();
