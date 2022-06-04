@@ -8,6 +8,14 @@
     font-weight: bold;
 }
 
+/* 共通css */
+h2{
+  text-align: center;
+  padding: 30px;
+  background-color: aqua;
+  margin-bottom: 20px;
+}
+
 /* section1 */
 #container {
     background-image: url(./img/okinawa-shiga.jpeg);
@@ -27,6 +35,7 @@
     box-shadow: 2px 2px 5px 0px rgba(200, 200, 200, 1); */
     font-size: 30px;
     font-family: "Times New Roman";
+    margin-bottom: 50px;
 }
 
 /* タイプライターjs */
@@ -90,10 +99,78 @@
     }
 } */
 
+/* section2 */
+.tab-list{
+  display: flex;
+  justify-content: space-around;
+}
 
+#okinawa{
+  display: flex;
+}
 
+#shiga{
+  display: flex;
+}
 
+.area{
+  padding: 0 20px 0 0;
+  background-color: red;
+  border: solid 1px #fff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
 
+.tab-list li{
+  padding: 10px;
+  background-color: violet;
+  border: solid 1px #fff;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.tab-list li:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.container{
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+.box{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.box::after{
+  content: 'コンテンツ内容';
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#box1{
+  background-color: turquoise;
+}
+#box2{
+  background-color: rgb(150, 121, 204);
+}
+#box3{
+  background-color: rgb(64, 224, 131);
+}
+
+.current{
+  z-index: 1;
+  opacity: 1;
+}
 
 /* footer */
 footer {

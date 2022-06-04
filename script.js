@@ -1,3 +1,4 @@
+$(function(){
 // タイプライター
 // jsの場合
 const typewriter = (param) => {
@@ -42,3 +43,8 @@ typewriter({
 //             },splitLength*delaySpeed+fadeSpeed);
 //         });
 //     });
+
+
+
+  // ここより上で描く
+})
