@@ -29,6 +29,7 @@
     font-family: "Times New Roman";
 }
 
+/* タイプライターjs */
 #typewriter::after {
     content: "|";
     animation-name: blink;
@@ -45,7 +46,6 @@
         opacity: 1;
     }
 }
-
 
 /* タイプライターできない！!!!!!!!!!!!!!!!!!!*/
 
