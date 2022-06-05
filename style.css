@@ -86,58 +86,6 @@ h2 {
 }
 
 
-
-/* section2 */
-#tourist-content ul {
-    margin-bottom: 50px;
-}
-
-.question,
-.answer {
-    width: 50%;
-    margin: 0 auto;
-    padding: 10px;
-    background-color: rgb(64, 64, 102);
-    color: white;
-    border: solid 1px;
-}
-
-.question {
-    position: relative;
-    cursor: pointer;
-}
-
-.question::after,
-.question::before {
-    content: '';
-    display: block;
-    background-color: white;
-    position: absolute;
-}
-
-.question::after {
-    width: 20px;
-    height: 2px;
-    right: 10px;
-    top: 50%;
-}
-
-.question::before {
-    width: 2px;
-    height: 20px;
-    right: 19px;
-    top: 30%;
-}
-
-.question.on::before {
-    display: none;
-}
-
-.answer {
-    display: none;
-    background-color: rgb(230, 160, 75);
-}
-
 /* section3 */
 .tab-list {
     display: flex;
@@ -150,6 +98,10 @@ h2 {
 
 #shiga {
     display: flex;
+}
+
+.text{
+  font-size: 15px;
 }
 
 .area {
