@@ -42,7 +42,7 @@ h2 {
 
 
 
-/* タイプライターJS */
+/* タイプライター*/
 
 #typewriter {
     font-size: 50px;
@@ -189,58 +189,63 @@ h2 {
     font-size: 40px;
     top: 50%;
     left: 50%;
+  
     transform: translate(-50%, -50%);
 }
 
 #box1 {
-    background-image: url(./img/syuricastle.jpeg.jpeg);
+    background-image: url(./img/box1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 800px;
+    margin-left: 150px;
+    width: 1200px;
 }
 
 #box2 {
-    background-image: url(./img/okinawasoba.jpeg);
+    background-image: url(./img/box2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 800px;
+    margin-left: 150px;
+    width: 1200px;
+
 }
 
 #box3 {
-    background-image: url(./img/okinawaumi.jpeg);
+    background-image: url(./img/box3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 800px;
+    margin-left: 150px;
+    width: 1200px;
 }
 
 #box4 {
-    background-image: url(./img/hikone_castle.jpeg);
+    background-image: url(./img/box4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 800px;
-    margin-left: 710px;
+    margin-left: 150px;
+    width: 1200px;
 }
 
 #box5 {
-    background-image: url(./img/chanponn.jpeg);
+    background-image: url(./img/box5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 800px;
-    margin-left: 710px;
+    margin-left: 150px;
+    width: 1200px;
 }
 
 #box6 {
-    background-image: url(./img/biwako.jpeg);
+    background-image: url(./img/box6.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 800px;
-    margin-left: 710px;
+    margin-left: 150px;
+    width: 1200px;
 }
 
 .current {
