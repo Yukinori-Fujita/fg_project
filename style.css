@@ -1,24 +1,25 @@
 /* headerの部分 */
 .main-title {
     text-align: center;
-    padding: 28px;
-    font-size: 28px;
-    color: rgba(3, 3, 3, 0.82);
+    padding: 45px;
+    font-size: 40px;
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.881);
     font-family: 'Sawarabi Mincho', serif;
     font-weight: bold;
 }
 
 /* 共通css */
-h2{
-  text-align: center;
-  padding: 30px;
-  background-color: aqua;
-  margin-bottom: 50px;
+h2 {
+    text-align: center;
+    padding: 30px;
+    background-color: aqua;
+    margin-bottom: 50px;
 }
 
 /* section1 */
 #container-title {
-    background-image: url(./img/okinawa-shiga.jpeg);
+    background-image: url(./img/shigaokinawa.jpg);
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -27,25 +28,35 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 28px;
+
+}
+
+/* padding: 28px;
     line-height: 1.5;
     border: 1px solid #ffffff;
     border-radius: 5px;
     background-color: transparent;
     box-shadow: 2px 2px 5px 0px rgba(200, 200, 200, 1); */
-    font-size: 30px;
-    font-family: "Times New Roman";
-    margin-bottom: 50px;
+
+
+
+
+
+/* タイプライターJS */
+
+#typewriter {
+    font-size: 50px;
+    opacity: 0.8;
+    color: rgb(4, 4, 4);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* タイプライターjs */
 #typewriter::after {
     content: "|";
     animation-name: blink;
-    animation-duration: 1s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
 }
-
 @keyframes blink {
     from {
         opacity: 0;
@@ -55,9 +66,6 @@ h2{
         opacity: 1;
     }
 }
-
-/* タイプライターできない！!!!!!!!!!!!!!!!!!!*/
-
 #tyepwriter span {
     position: absolute;
     top: 50%;
@@ -72,228 +80,215 @@ h2{
     margin: 0;
 }
 
-/* 文字の点滅 */
-/* #container span {
-    opacity: 1;
-    -webkit-animation: blink 0.3s infinite;
-    -moz-animation: blink 0.3s infinite;
-    animation: blink 0.5s infinite;
-    animation-direction: alternate;
-} */
 
-/* @keyframes blink {
-    100% {
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes blink {
-    100% {
-        opacity: 0;
-    }
-}
-
-@-moz-keyframes blink {
-    100% {
-        opacity: 0;
-    }
-} */
 
 /* section2 */
 #tourist-content ul {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
-.question,.answer{
-  width: 50%;
-  margin: 0 auto;
-  padding: 10px;
-  background-color: rgb(64, 64, 102);
-  color: white;
-  border: solid 1px;
+.question,
+.answer {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgb(64, 64, 102);
+    color: white;
+    border: solid 1px;
 }
 
-.question{
-  position: relative;
-  cursor: pointer;
+.question {
+    position: relative;
+    cursor: pointer;
 }
 
-.question::after,.question::before{
-  content: '';
-  display: block;
-  background-color: white;
-  position: absolute;
+.question::after,
+.question::before {
+    content: '';
+    display: block;
+    background-color: white;
+    position: absolute;
 }
 
-.question::after{
-  width: 20px;
-  height: 2px;
-  right: 10px;
-  top: 50%;
+.question::after {
+    width: 20px;
+    height: 2px;
+    right: 10px;
+    top: 50%;
 }
 
-.question::before{
-  width: 2px;
-  height: 20px;
-  right: 19px;
-  top: 30%;
+.question::before {
+    width: 2px;
+    height: 20px;
+    right: 19px;
+    top: 30%;
 }
 
-.question.on::before{
-  display: none;
+.question.on::before {
+    display: none;
 }
 
-.answer{
-  display: none;
-  background-color: rgb(230, 160, 75);
+.answer {
+    display: none;
+    background-color: rgb(230, 160, 75);
 }
 
 /* section3 */
-.tab-list{
-  display: flex;
-  justify-content: space-around;
+.tab-list {
+    display: flex;
+    justify-content: space-around;
 }
 
-#okinawa{
-  display: flex;
+#okinawa {
+    display: flex;
 }
 
-#shiga{
-  display: flex;
+#shiga {
+    display: flex;
 }
 
-.area{
-  padding: 0 20px 0 0;
-  color: white;
-  background-color: red;
-  border: solid 1px #fff;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+.area {
+    padding: 0 20px 0 0;
+    color: white;
+    background-color: red;
+    border: solid 1px #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
-.tab-list li{
-  padding: 10px;
-  background-color: violet;
-  border: solid 1px #fff;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+.tab-list li {
+    padding: 10px;
+    background-color: violet;
+    border: solid 1px #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
-.tab-list li:hover{
-  opacity: 0.5;
-  cursor: pointer;
+.tab-list li:hover {
+    opacity: 0.5;
+    cursor: pointer;
 }
 
-.container_tourist{
-  width: 100%;
-  height: 600px;
-  position: relative;
+.container_tourist {
+    width: 100%;
+    height: 600px;
+    position: relative;
 }
 
-.box{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-  transition: all 0.5s ease;
+.box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
-.box::after{
-  content: '';
-  position: absolute;
-  font-size: 40px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+.box::after {
+    content: '';
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#box1{
-  background-image: url(./img/syuri-castle.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#box2{
-  background-image: url(./img/okinawasoba.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#box3{
-  background-image: url(./img/okinawaumi.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#box4{
-  background-image: url(./img/hikone_castle.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#box5{
-  background-image: url(./img/chanponn.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-#box6{
-  background-image: url(./img/biwako.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#box1 {
+    background-image: url(./img/syuricastle.jpeg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
 }
 
-.current{
-  z-index: 1;
-  opacity: 1;
+#box2 {
+    background-image: url(./img/okinawasoba.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+}
+
+#box3 {
+    background-image: url(./img/okinawaumi.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+}
+
+#box4 {
+    background-image: url(./img/hikone_castle.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    margin-left: 710px;
+}
+
+#box5 {
+    background-image: url(./img/chanponn.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    margin-left: 710px;
+}
+
+#box6 {
+    background-image: url(./img/biwako.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    margin-left: 710px;
+}
+
+.current {
+    z-index: 1;
+    opacity: 1;
 }
 
 
 /* ページトップに戻る */
-#page-top{
+#page-top {
     position: fixed;
-    bottom: 20px;
+    bottom: 80px;
     right: 20px;
-    font-size: 15px;
     line-height: 1;
     z-index: 99;
 }
 
 #page-top a {
-    background: blueviolet;
-    text-decoration:none;
-    color: white;
-    width: 50px;
-    padding: 28px 5px;
+    background: rgba(245, 249, 2, 0.948);
+    font-size: 35px;
+    width: 70px;
+    padding: 20px 1px;
     text-align: center;
     display: block;
-    border-radius: 90px;
-    opacity: 0.9;
-    transition: all .3s ease;
+    border-radius: 99px;
+    transition: all .1s ease;
 }
 
-#page-top a:hover{
-    text-decoration: none;
-    opacity: .5;
+#page-top a:hover {
+    opacity: 0.5;
 }
 
 /* フッター */
 footer {
     height: 70px;
-    background: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.92);
     position: relative;
 }
-    footer small{
+
+footer small {
     font-family: 'Kiwi Maru', serif;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 17px;
-    color: rgb(4, 4, 4);
+    color: rgb(241, 241, 241);
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    -webkit-transform : translate(-50%,-50%);
-    transform : translate(-50%,-50%);
-  }  
-
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
