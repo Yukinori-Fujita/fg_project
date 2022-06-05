@@ -1,7 +1,7 @@
 $(function () {
 
     
-    // jsの場合
+    // JSの場合
     const typewriter = (param) => {
         let el = document.querySelector(param.el);
         let speed = param.speed;
@@ -13,18 +13,16 @@ $(function () {
             }, speed * index);
         });
     };
-
-
-
-    // JSの場合
+    
      typewriter({
-     el: "#typewriter",
-     speed: 200,
-     string: "I AM YUKINORI FUJITA. I AM YUNA GUSHIKEN. FG_PROJECT START !",
+    el: "#typewriter",
+    speed: 200,
+    string: "I AM YUKINORI FUJITA. I AM YUNA GUSHIKEN. FG_PROJECT START !",
+
+     
      });
 
-
-
+    
 
     // section3
 

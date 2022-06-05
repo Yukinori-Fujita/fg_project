@@ -3,19 +3,20 @@
     text-align: center;
     padding: 45px;
     font-size: 40px;
-    background-color: rgb(0, 0, 0);
-    color: rgba(255, 255, 255, 0.881);
+    background-color: rgba(0, 0, 0, 0.935);
+    color: rgba(255, 255, 255, 0.919);
     font-family: 'Sawarabi Mincho', serif;
-    font-weight: bold;
+    
 }
 
 /* 共通css */
 h2 {
     text-align: center;
     padding: 20px;
-    background-color: rgb(223, 216, 0);
-    color: rgba(0, 0, 0, 0.66);
+    background-color: rgb(231, 224, 0);
+    color: rgba(0, 0, 0, 0.785);
     font-size: 80px;
+    font-family: 'Sawarabi Mincho', serif;
     margin-bottom: 50px;
     
     
@@ -49,11 +50,15 @@ h2 {
 /* タイプライター*/
 
 #typewriter {
-    font-size: 50px;
+    font-size: 80px;
+    padding-bottom: 400px;
+    padding-top: 300px;
+    margin-left: 80px;
     opacity: 0.8;
-    color: rgb(4, 4, 4);
+    color: rgba(0, 0, 0, 0.901);
     text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    
 }
 
 #typewriter::after {
@@ -152,6 +157,8 @@ h2 {
     display: flex;
 }
 
+
+
 .area {
     padding: 0 20px 0 0;
     color: white;
@@ -161,17 +168,18 @@ h2 {
     border-top-left-radius: 5px;
 }
 
+
+
 .tab-list li {
-    padding: 10px;
-    background-color: rgba(245, 1, 107, 0.922);
+    padding: 12px;
+    background-color: rgba(252, 21, 121, 0.919);
     border: solid 1px #fff;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     text-align: center;
-    
-    font-size: 20px;
-    height: 50px;
-    width: 115px;
+    font-size: 18px;
+    height: 45px;
+    width: 117px;
     
   
 }
