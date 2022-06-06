@@ -14,9 +14,12 @@
 .Item {
   border-radius: 50%;
   width: calc(100% / 13);
- 
   height: auto;
   cursor: pointer;
+}
+
+header div{
+  text-align: center;
 }
 
 /* 共通css */
@@ -273,7 +276,7 @@ h2 {
   position: absolute;
   top: 155px;
   left: -100%;
-  color: black;
+  color: white;
   transition: all 0.5s ease;
 }
 
