@@ -2,43 +2,50 @@ $(function () {
 
     // ローディング画面
     var Emblem = {
-        init: function(el, str) {
-          var element = document.querySelector(el);
-          var text = str ? str : element.innerHTML;
-          element.innerHTML = '';
-          for (var i = 0; i < text.length; i++) {
-            var letter = text[i];
-            var span = document.createElement('span');
-            var node = document.createTextNode(letter);
-            var r = (360/text.length)*(i);
-            var x = (Math.PI/text.length).toFixed(0) * (i);
-            var y = (Math.PI/text.length).toFixed(0) * (i);
-            span.appendChild(node);
-            span.style.webkitTransform = 'rotateZ('+r+'deg) translate3d('+x+'px,'+y+'px,0)';
-            span.style.transform = 'rotateZ('+r+'deg) translate3d('+x+'px,'+y+'px,0)';
-            element.appendChild(span);
-          }
+        init: function (el, str) {
+            var element = document.querySelector(el);
+            var text = str ? str : element.innerHTML;
+            element.innerHTML = '';
+            for (var i = 0; i < text.length; i++) {
+                var letter = text[i];
+                var span = document.createElement('span');
+                var node = document.createTextNode(letter);
+                var r = (360 / text.length) * (i);
+                var x = (Math.PI / text.length).toFixed(0) * (i);
+                var y = (Math.PI / text.length).toFixed(0) * (i);
+                span.appendChild(node);
+                span.style.webkitTransform = 'rotateZ(' + r + 'deg) translate3d(' + x + 'px,' + y + 'px,0)';
+                span.style.transform = 'rotateZ(' + r + 'deg) translate3d(' + x + 'px,' + y + 'px,0)';
+                element.appendChild(span);
+            }
         }
-      };
-      
-      Emblem.init('.emblem');
+    };
+
+    Emblem.init('.emblem');
+
+    window.onload = function () {
+        const spinner = document.getElementById('loading');
+        spinner.classList.add('loaded');
+        const spinner2 = document.getElementsByClassName("emblem");
+        spinner2.classList.add("loaded");
+    }
 
     // ゆるキャラhover
-    $('.Item').each(function() {
+    $('.Item').each(function () {
 
         let img_off = $(this).attr('src');
         let img_on = $(this).attr('src').replace('off', 'on');
-      
+
         $(this).hover(
-          function () {
-            $(this).attr('src', img_on);
-          },
-          function () {
-            $(this).attr('src', img_off);
-          }
+            function () {
+                $(this).attr('src', img_on);
+            },
+            function () {
+                $(this).attr('src', img_off);
+            }
         );
-      
-      });
+
+    });
 
 
 
@@ -54,16 +61,16 @@ $(function () {
             }, speed * index);
         });
     };
-    
-     typewriter({
-    el: "#typewriter",
-    speed: 100,
-    string: "I AM YUKINORI FUJITA. I AM YUNA GUSHIKEN. FG_PROJECT START !",
 
-     
-     });
+    typewriter({
+        el: "#typewriter",
+        speed: 100,
+        string: "I AM YUKINORI FUJITA. I AM YUNA GUSHIKEN. FG_PROJECT START !",
 
-    
+
+    });
+
+
 
     // section3
     $(".tab-list li a").on("click", function (event) {
