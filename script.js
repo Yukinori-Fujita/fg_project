@@ -24,10 +24,12 @@ $(function () {
     Emblem.init('.emblem');
 
     window.onload = function () {
-        const spinner = document.getElementById('loading');
-        spinner.classList.add('loaded');
-        const spinner2 = document.getElementsByClassName("emblem");
-        spinner2.classList.add("loaded");
+        $("#loading").addClass("loaded")
+        // const spinner = document.getElementById('loading');
+        // spinner.classList.add('loaded');
+
+        // const spinner2 = document.getElementsByClassName("emblem");
+        // spinner2.classList.add("loaded");
     }
 
     // ゆるキャラhover
