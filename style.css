@@ -120,8 +120,6 @@ h2 {
 }
 
 
-
-
 .text {
   font-size: 15px;
 }
@@ -151,6 +149,7 @@ h2 {
 
 }
 
+
 .tab-list li:hover {
   opacity: 0.8;
   cursor: pointer;
@@ -179,6 +178,7 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
+
 #box1 {
   background-image: url(./img/box1.jpg);
   background-position: center;
@@ -187,6 +187,7 @@ h2 {
   margin-left: 160px;
   width: 1200px;
 }
+
 
 #box2 {
   background-image: url(./img/box2.jpg);
@@ -198,6 +199,7 @@ h2 {
 
 }
 
+
 #box3 {
   background-image: url(./img/box3.jpg);
   background-position: center;
@@ -206,6 +208,7 @@ h2 {
   margin-left: 160px;
   width: 1200px;
 }
+
 
 #box4 {
   background-image: url(./img/box4.jpg);
@@ -216,6 +219,7 @@ h2 {
   width: 1200px;
 }
 
+
 #box5 {
   background-image: url(./img/box5.jpg);
   background-position: center;
@@ -224,6 +228,7 @@ h2 {
   margin-left: 160px;
   width: 1200px;
 }
+
 
 #box6 {
   background-image: url(./img/box6.jpg);
@@ -239,12 +244,14 @@ h2 {
   opacity: 1;
 }
 
+
 /* サガ */
 #saga{
   width: 80%;
   margin: 0 auto;
   position: relative;
 }
+
 
 .fileter{
   height: 400px;
@@ -255,6 +262,7 @@ h2 {
   right: -100%;
   transition: all 0.5s ease;
 }
+
 
 #ranking-btn{
   background-image: url(./img/004051.smpl.png);
@@ -268,6 +276,7 @@ h2 {
   position: relative;
   overflow: hidden;
 }
+
 
 .ranking-text{
   border-radius: 50%;
@@ -292,6 +301,8 @@ h2 {
 /* .gogo{
   display: none;
 } */
+
+
 
 /* ページトップに戻る */
 #page-top {

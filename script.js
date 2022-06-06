@@ -34,7 +34,7 @@ $(function () {
     
      typewriter({
     el: "#typewriter",
-    speed: 200,
+    speed: 100,
     string: "I AM YUKINORI FUJITA. I AM YUNA GUSHIKEN. FG_PROJECT START !",
 
      
@@ -43,7 +43,6 @@ $(function () {
     
 
     // section3
-
     $(".tab-list li a").on("click", function (event) {
         event.preventDefault();
         let target = $(this).attr("href");
