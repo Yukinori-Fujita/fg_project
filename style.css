@@ -248,7 +248,8 @@ h2 {
   background-color: rgba(0, 0, 255, 0.594);
   position: absolute;
   top: 0;
-  right: -600px;
+  right: -100%;
+  transition: all 0.5s ease;
 }
 
 #ranking-btn{
@@ -260,6 +261,8 @@ h2 {
   height: 400px;
   border: solid 1px black;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
 
 .ranking-text{
@@ -268,19 +271,23 @@ h2 {
   height: 100px;
   position: absolute;
   top: 155px;
-  left: -300px;
-  color: white;
-}
-
-.ranking-text.hide{
-  transform: translateX(400px);
+  left: -100%;
+  color: black;
   transition: all 0.5s ease;
 }
 
-.fileter.hide{
-  transform: translateX(-1453px);
-  transition: all 0.5s ease;
+#ranking-btn:hover .ranking-text{
+  left: 0;
 }
+
+#ranking-btn:hover .fileter{
+  right: 0;
+  
+}
+
+/* .gogo{
+  display: none;
+} */
 
 /* ページトップに戻る */
 #page-top {

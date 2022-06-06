@@ -52,13 +52,13 @@ $(function () {
     })
 
     // サガ
-    $("#ranking-btn").on("mouseover",function(){
-        $(".ranking-text").toggleClass("hide");
-        $(".fileter").toggleClass("hide");
-    })
+    // $("#ranking-btn").on("mouseover",function(){
+    //     $(".ranking-text").addClass("hide");
+    //     $(".fileter").addClass("hide");
+    // })
     // $("#ranking-btn").on("mouseleave",function(){
-    //     $(".ranking-text").toggleClass("hide");
-    //     $(".fileter").toggleClass("hide");
+    //     $(".ranking-text").removeClass("hide");
+    //     $(".fileter").removeClass("hide");
     // })
 
     // ページトップに戻る
