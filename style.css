@@ -1,3 +1,8 @@
+/* ローディング画面 */
+.enblem{
+  border-radius: 50%;
+}
+
 /* headerの部分 */
 .main-title {
   text-align: center;
@@ -45,7 +50,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 /* padding: 28px;
@@ -67,7 +71,7 @@ h2 {
   padding-top: 300px;
   margin-left: 80px;
   opacity: 0.8;
-  color: rgba(0, 0, 0, 0.901);
+  color: lightskyblue;
   text-align: center;
 
 
@@ -240,28 +244,46 @@ h2 {
 }
 
 /* サガ */
+#shiga-saga{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin-right: 30px;
+}
+
+h3{
+  font-size: 30px;
+}
+
+#okinawa-saga{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
 #saga{
   width: 80%;
   margin: 0 auto;
   position: relative;
+  display: flex;
 }
 
 .fileter{
   height: 400px;
-  width: 300px;
+  width: 100%;
   background-color: rgba(0, 0, 255, 0.594);
   position: absolute;
   top: 0;
-  right: -100%;
+  right: -101%;
   transition: all 0.5s ease;
 }
 
-#ranking-btn{
+#candy{
   background-image: url(./img/004051.smpl.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 300px;
+  width: calc(100% / 2);
   height: 400px;
   border: solid 1px black;
   cursor: pointer;
@@ -280,11 +302,11 @@ h2 {
   transition: all 0.5s ease;
 }
 
-#ranking-btn:hover .ranking-text{
-  left: 0;
+#candy:hover .ranking-text{
+  left: 35%;
 }
 
-#ranking-btn:hover .fileter{
+#candy:hover .fileter{
   right: 0;
   
 }
