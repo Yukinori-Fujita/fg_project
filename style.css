@@ -13,7 +13,6 @@
 .Item {
   border-radius: 50%;
   width: calc(100% / 13);
- 
   height: auto;
   cursor: pointer;
 }
