@@ -1,5 +1,5 @@
 /* ローディング画面 */
-.enblem{
+.enblem {
   border-radius: 50%;
 }
 
@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 
-header div{
+header div {
   text-align: center;
 }
 
@@ -124,8 +124,6 @@ h2 {
 }
 
 
-
-
 .text {
   font-size: 15px;
 }
@@ -155,6 +153,7 @@ h2 {
 
 }
 
+
 .tab-list li:hover {
   opacity: 0.8;
   cursor: pointer;
@@ -183,6 +182,7 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
+
 #box1 {
   background-image: url(./img/box1.jpg);
   background-position: center;
@@ -191,6 +191,7 @@ h2 {
   margin-left: 160px;
   width: 1200px;
 }
+
 
 #box2 {
   background-image: url(./img/box2.jpg);
@@ -202,6 +203,7 @@ h2 {
 
 }
 
+
 #box3 {
   background-image: url(./img/box3.jpg);
   background-position: center;
@@ -210,6 +212,7 @@ h2 {
   margin-left: 160px;
   width: 1200px;
 }
+
 
 #box4 {
   background-image: url(./img/box4.jpg);
@@ -220,6 +223,7 @@ h2 {
   width: 1200px;
 }
 
+
 #box5 {
   background-image: url(./img/box5.jpg);
   background-position: center;
@@ -228,6 +232,7 @@ h2 {
   margin-left: 160px;
   width: 1200px;
 }
+
 
 #box6 {
   background-image: url(./img/box6.jpg);
@@ -243,32 +248,34 @@ h2 {
   opacity: 1;
 }
 
+
 /* サガ */
-#shiga-saga{
+#shiga-saga {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
   margin-right: 30px;
 }
 
-h3{
+h3 {
   font-size: 30px;
 }
 
-#okinawa-saga{
+#okinawa-saga {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
 }
 
-#saga{
+#saga {
   width: 80%;
   margin: 0 auto;
   position: relative;
   display: flex;
 }
 
-.fileter{
+
+.fileter {
   height: 400px;
   width: 100%;
   background-color: rgba(0, 0, 255, 0.594);
@@ -278,7 +285,8 @@ h3{
   transition: all 0.5s ease;
 }
 
-#candy{
+
+#candy {
   background-image: url(./img/004051.smpl.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -291,7 +299,8 @@ h3{
   overflow: hidden;
 }
 
-.ranking-text{
+
+.ranking-text {
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -302,18 +311,20 @@ h3{
   transition: all 0.5s ease;
 }
 
-#candy:hover .ranking-text{
+#candy:hover .ranking-text {
   left: 35%;
 }
 
-#candy:hover .fileter{
+#candy:hover .fileter {
   right: 0;
-  
+
 }
 
 /* .gogo{
   display: none;
 } */
+
+
 
 /* ページトップに戻る */
 #page-top {
