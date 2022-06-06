@@ -269,16 +269,17 @@ h2 {
   position: absolute;
   top: 155px;
   left: -300px;
+  color: white;
 }
 
 .ranking-text.hide{
   transform: translateX(400px);
-  transition: all 5s;
+  transition: all 0.5s ease;
 }
 
 .fileter.hide{
   transform: translateX(-1453px);
-  transition: all 5s;
+  transition: all 0.5s ease;
 }
 
 /* ページトップに戻る */
