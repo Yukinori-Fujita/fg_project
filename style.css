@@ -1,8 +1,54 @@
 /* ローディング画面 */
-.enblem {
-  border-radius: 50%;
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #0bd;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.emblem {
+	position: absolute;
+	left: 0;
+	right: 0;
+  top: 25vh;
+	margin: 0 auto;
+	width: 50vh;
+	height: 50vh;
+	border-radius: 50%;
+  font-weight: bold;
+	color:  #003A6F;
+	animation: spinZ 20s linear infinite;
+	text-align: center;
+}
+	span {
+		position: absolute;
+		display: inline-block;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		text-transform: uppercase;
+		font-size: 5vh;
+		transition: all .5s cubic-bezier(0,0,0,1);
+	}
+
+	@keyframes spinZ {
+		0% {
+			transform: rotateZ(360deg);
+		}
+		100% {
+			transform: rotateZ(0deg);
+		}
+	}
 
 /* headerの部分 */
 .main-title {
