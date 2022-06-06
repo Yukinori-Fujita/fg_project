@@ -13,7 +13,8 @@
 /* ゆるキャラhover */
 .Item {
   border-radius: 50%;
-  width: 120px;
+  width: calc(100% / 13);
+ 
   height: auto;
   cursor: pointer;
 }
@@ -144,7 +145,6 @@ h2 {
   font-size: 18px;
   height: 45px;
   width: 117px;
-
 
 }
 
