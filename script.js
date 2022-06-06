@@ -18,7 +18,6 @@ $(function () {
       });
 
 
-
     // JSの場合
     const typewriter = (param) => {
         let el = document.querySelector(param.el);

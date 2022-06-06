@@ -3,6 +3,7 @@
   border-radius: 50%;
 }
 
+
 /* headerの部分 */
 .main-title {
   text-align: center;
@@ -66,16 +67,14 @@ h2 {
 /* タイプライター*/
 
 #typewriter {
-  font-size: 80px;
-  padding-bottom: 400px;
-  padding-top: 300px;
+  font-size: 30px;
+  padding-top: 700px;
   margin-left: 80px;
   opacity: 0.8;
   color: lightskyblue;
   text-align: center;
-
-
 }
+
 
 #typewriter::after {
   content: "|";
@@ -83,6 +82,7 @@ h2 {
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
+
 
 @keyframes blink {
   from {
@@ -93,6 +93,7 @@ h2 {
     opacity: 1;
   }
 }
+
 
 #tyepwriter span {
   position: absolute;
@@ -115,9 +116,11 @@ h2 {
   justify-content: space-around;
 }
 
+
 #okinawa {
   display: flex;
 }
+
 
 #shiga {
   display: flex;
@@ -139,7 +142,6 @@ h2 {
 }
 
 
-
 .tab-list li {
   padding: 12px;
   background-color: rgba(252, 21, 121, 0.919);
@@ -159,11 +161,13 @@ h2 {
   cursor: pointer;
 }
 
+
 .container_tourist {
   width: 100%;
   height: 600px;
   position: relative;
 }
+
 
 .box {
   width: 100%;
@@ -172,6 +176,7 @@ h2 {
   opacity: 0;
   transition: all 0.5s ease;
 }
+
 
 .box::after {
   content: '';
@@ -243,6 +248,7 @@ h2 {
   width: 1200px;
 }
 
+
 .current {
   z-index: 1;
   opacity: 1;
@@ -257,15 +263,22 @@ h2 {
   margin-right: 30px;
 }
 
+
+
+
 h3 {
   font-size: 30px;
 }
 
+
+
+/* 沖縄ランキング */
 #okinawa-saga {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
 }
+
 
 #saga {
   width: 80%;
