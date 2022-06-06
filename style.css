@@ -236,23 +236,49 @@ h2 {
 }
 
 /* サガ */
-#ranking {
+#saga{
   width: 80%;
   margin: 0 auto;
   position: relative;
 }
 
-.ranking-text img {
-  border: solid 2px black;
+.fileter{
+  height: 400px;
+  width: 300px;
+  background-color: rgba(0, 0, 255, 0.594);
+  position: absolute;
+  top: 0;
+  right: -600px;
+}
+
+#ranking-btn{
+  background-image: url(./img/004051.smpl.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  border: solid 1px black;
   cursor: pointer;
 }
 
-.ranking-text img:hover {
+.ranking-text{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 155px;
+  left: -300px;
 }
 
-.ranking-text span {
-  position: absolute;
-  top: 200px;
+.ranking-text.hide{
+  transform: translateX(400px);
+  transition: all 5s;
+}
+
+.fileter.hide{
+  transform: translateX(-1453px);
+  transition: all 5s;
 }
 
 /* ページトップに戻る */

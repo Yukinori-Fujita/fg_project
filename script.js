@@ -51,6 +51,15 @@ $(function () {
         $(target).addClass("current");
     })
 
+    // サガ
+    $("#ranking-btn").on("mouseover",function(){
+        $(".ranking-text").toggleClass("hide");
+        $(".fileter").toggleClass("hide");
+    })
+    $("#ranking-btn").on("mouseleave",function(){
+        $(".ranking-text").toggleClass("hide");
+        $(".fileter").toggleClass("hide");
+    })
 
     // ページトップに戻る
     var pagetop = $('#page-top');
