@@ -63,7 +63,7 @@ $(function () {
 
     typewriter({
         el: "#typewriter",
-        speed: 100,
+        speed: 200,
         string: "I AM YUKINORI FUJITA. I AM YUNA GUSHIKEN. FG_PROJECT START !",
     });
 
