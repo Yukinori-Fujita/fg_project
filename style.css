@@ -113,10 +113,10 @@ h2 {
 /* ------------------タイプライター----------------*/
 
 #typewriter {
-  display: flex;
+  /* display: flex; */
   text-align: center;
-  align-items: center;
-  font-size: 91px;
+  /* align-items: center; */
+  font-size: 93px;
   color: rgba(255, 0, 123, 0.677);
   font-family: 'Dela Gothic One', cursive;
   margin-top: 20%;
@@ -125,6 +125,9 @@ h2 {
 
 #typewriter::after {
   content: "|";
+  /* position: absolute;
+  bottom: 0;
+  right: 0; */
   animation-name: blink;
   animation-duration: 1s;
   animation-iteration-count: infinite;
