@@ -341,7 +341,7 @@ h3 {
   color: white;
   transition: all 0.5s ease;
   font-family: 'M PLUS Rounded 1c', sans-serif;
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -516,6 +516,7 @@ h3 {
 }
 
 #candy1:hover .ranking-text {
+    
   left: 35%;
 }
 
