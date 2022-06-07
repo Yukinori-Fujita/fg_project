@@ -127,8 +127,7 @@ h2 {
   content: "|";
   animation-name: blink;
   animation-duration: 1s;
-
-
+  animation-iteration-count: infinite;
 }
 
 
