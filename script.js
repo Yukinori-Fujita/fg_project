@@ -34,15 +34,18 @@ $(function () {
     };
 
     Emblem.init('.emblem');
+    $("#loading").addClass("loaded");
+    console.log("test");
+    console.log($("#loading"));
 
-    window.onload = function () {
-        $("#loading").addClass("loaded")
+    // window.onload = function () {
+    //     $("#loading").addClass("loaded")
         // const spinner = document.getElementById('loading');
         // spinner.classList.add('loaded');
 
         // const spinner2 = document.getElementsByClassName("emblem");
         // spinner2.classList.add("loaded");
-    }
+    // }
 
 
     // JSの場合
@@ -62,7 +65,6 @@ $(function () {
         el: "#typewriter",
         speed: 100,
         string: "I AM YUKINORI FUJITA. I AM YUNA GUSHIKEN. FG_PROJECT START !",
-
     });
 
 

@@ -2,7 +2,7 @@
 #loading {
   width: 100vw;
   height: 100vh;
-  transition: all 1.5s;
+  transition: all 3s;
   background-color: rgba(4, 217, 255, 0.969);
   position: fixed;
   top: 0;
@@ -133,11 +133,11 @@ h2 {
 
 @keyframes blink {
   from {
-    opacity: 0;
+    opacity: 100%;
   }
 
   to {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
