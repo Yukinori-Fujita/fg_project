@@ -1,102 +1,101 @@
-/* ローディング画面 */
+/* ---------------ローディング画面---------------- */
 #loading {
-  width: 100vw;
-  height: 100vh;
-  transition: all 1s;
-  background-color: #0bd;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: #0bd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
 }
 
 .loaded {
-  opacity: 0;
-  visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .emblem {
-	position: absolute;
-	left: 0;
-	right: 0;
-  top: 25vh;
-	margin: 0 auto;
-	width: 50vh;
-	height: 50vh;
-	border-radius: 50%;
-  font-weight: bold;
-	color:  #003A6F;
-	animation: spinZ 20s linear infinite;
-	text-align: center;
-}
-	span {
-		position: absolute;
-		display: inline-block;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		text-transform: uppercase;
-		font-size: 5vh;
-		transition: all .5s cubic-bezier(0,0,0,1);
-	}
-
-	@keyframes spinZ {
-		0% {
-			transform: rotateZ(360deg);
-		}
-		100% {
-			transform: rotateZ(0deg);
-		}
-	}
-
-/* headerの部分 */
-.main-title {
-  text-align: center;
-  padding: 45px;
-  font-size: 40px;
-  background-color: rgba(0, 0, 0, 0.935);
-  color: rgba(255, 255, 255, 0.919);
-  font-family: 'Sawarabi Mincho', serif;
-
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25vh;
+    margin: 0 auto;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #003A6F;
+    animation: spinZ 20s linear infinite;
+    text-align: center;
 }
 
-
-/* ゆるキャラhover */
-.Item {
-  border-radius: 50%;
-  width: calc(100% / 13);
-  height: auto;
-  cursor: pointer;
+span {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-transform: uppercase;
+    font-size: 5vh;
+    transition: all .5s cubic-bezier(0, 0, 0, 1);
 }
 
-header div {
-  text-align: center;
+@keyframes spinZ {
+    0% {
+        transform: rotateZ(360deg);
+    }
+
+    100% {
+        transform: rotateZ(0deg);
+    }
 }
 
-/* 共通css */
+/* ----------------メインタイトル----------------- */
+
+.h1{
+    opacity:0;
+    transform:translateX(200px);
+    text-align: center;
+    padding: 45px;
+    font-size: 33px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.935);
+    color: rgb(0, 0, 0);
+    font-family: 'Zen Maru Gothic', sans-serif; 
+  }
+  
+  .Animation{
+    opacity:1;
+    transform:translateX(0px);
+    transition:opacity 7s,transform 5s;
+  }
+
+
+/* ------------------沖縄滋賀共通css-------------------- */
 h2 {
-  text-align: center;
-  padding: 20px;
-  background-color: rgb(231, 224, 0);
-  color: rgba(0, 0, 0, 0.785);
-  font-size: 80px;
-  font-family: 'Sawarabi Mincho', serif;
-  margin-bottom: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 32, 190, 0.929);
+    color: rgba(0, 0, 0, 0.893);
+    font-size: 70px;
+    margin-bottom: 50px;
+    font-weight: bold;
 
 }
 
-/* section1 */
+/* ------------------section1------------------- */
 #container-title {
-  background-image: url(./img/shigaokinawa.jpg);
-  height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    background-image: url(./img/shigaokinawa.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* padding: 28px;
@@ -110,274 +109,423 @@ h2 {
 
 
 
-/* タイプライター*/
+/* ------------------タイプライター----------------*/
 
 #typewriter {
-  font-size: 30px;
-  padding-top: 700px;
-  margin-left: 80px;
-  opacity: 0.8;
-  color: lightskyblue;
-  text-align: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 95px;
+    color: rgba(255, 0, 123, 0.677);
+    font-family: 'Dela Gothic One', cursive;
+    margin-top: 20%;
 }
 
 
 #typewriter::after {
-  content: "|";
-  animation-name: blink;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+    content: "|";
+    animation-name: blink;
+    animation-duration: 1s;
+    
+   
 }
 
 
 @keyframes blink {
-  from {
-    opacity: 0;
-  }
+    from {
+        opacity: 0;
+    }
 
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 
-#tyepwriter span {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: rgb(4, 4, 4);
-  opacity: 0.75;
-  font-size: 30px;
-  margin: 0;
-}
-
-
-/* section3 */
+/* ------------------沖縄滋賀---------------------*/
 .tab-list {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 
 #okinawa {
-  display: flex;
+    display: flex;
 }
 
 
 #shiga {
-  display: flex;
+    display: flex;
 }
 
 
 .text {
-  font-size: 15px;
+    font-size: 17px;
 }
 
 
 .area {
-  padding: 0 20px 0 0;
-  color: white;
-  background-color: red;
-  border: solid 1px #fff;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+    padding: 0 20px 0 0;
+    color: rgb(3, 3, 3);
+    border: solid 1px #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 
 .tab-list li {
-  padding: 12px;
-  background-color: rgba(252, 21, 121, 0.919);
-  border: solid 1px #fff;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  text-align: center;
-  font-size: 18px;
-  height: 45px;
-  width: 117px;
+    padding: 12px;
+    background-color: rgba(252, 21, 121, 0.919);
+    border: solid 1px #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    text-align: center;
+    height: 45px;
+    width: 117px;
 
 }
 
-
 .tab-list li:hover {
-  opacity: 0.8;
-  cursor: pointer;
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 
 .container_tourist {
-  width: 100%;
-  height: 600px;
-  position: relative;
+    width: 100%;
+    height: 600px;
+    position: relative;
 }
 
 
 .box {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  opacity: 0;
-  transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
 
 .box::after {
-  content: '';
-  position: absolute;
-  font-size: 40px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    content: '';
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-
+/* ------------------box1,2,3,4,5,6------------------- */
 #box1 {
-  background-image: url(./img/box1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: 160px;
-  width: 1200px;
+    background-image: url(./img/box1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 160px;
+    width: 1200px;
 }
 
 
 #box2 {
-  background-image: url(./img/box2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: 160px;
-  width: 1200px;
+    background-image: url(./img/box2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 160px;
+    width: 1200px;
 
 }
 
 
 #box3 {
-  background-image: url(./img/box3.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: 160px;
-  width: 1200px;
+    background-image: url(./img/box3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 160px;
+    width: 1200px;
 }
 
 
 #box4 {
-  background-image: url(./img/box4.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: 160px;
-  width: 1200px;
+    background-image: url(./img/box4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 160px;
+    width: 1200px;
 }
 
 
 #box5 {
-  background-image: url(./img/box5.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: 160px;
-  width: 1200px;
+    background-image: url(./img/box5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 160px;
+    width: 1200px;
 }
 
 
 #box6 {
-  background-image: url(./img/box6.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: 160px;
-  width: 1200px;
+    background-image: url(./img/box6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 160px;
+    width: 1200px;
 }
 
 
 .current {
-  z-index: 1;
-  opacity: 1;
+    z-index: 1;
+    opacity: 1;
 }
 
+h2 {
+    margin-bottom: 30px;
+    margin-top: 130px;
+}
 
-/* サガ */
+/* ------------------シガサガ--------------------- */
 #shiga-saga {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  margin-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-right: 30px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
-
-
 
 
 h3 {
-  font-size: 30px;
+    font-size: 35px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 
-
-/* 沖縄ランキング */
+/* ---------------------オキナワサガ---------------- */
 #okinawa-saga {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
 }
 
 
 #saga {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
 }
 
-
+/* --------------------フィルター-------------------- */
 .fileter {
-  height: 400px;
-  width: 100%;
-  background-color: rgba(0, 0, 255, 0.594);
-  position: absolute;
-  top: 0;
-  right: -101%;
-  transition: all 0.5s ease;
+    height: 400px;
+    width: 100%;
+    background-color: rgba(255, 0, 132, 0.65);
+    position: absolute;
+    top: 0;
+    right: -101%;
+    transition: all 0.5s ease;
 }
 
-
+/* -----------------------キャンディー----------------- */
 #candy {
-  background-image: url(./img/004051.smpl.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: calc(100% / 2);
-  height: 400px;
-  border: solid 1px black;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-
-.ranking-text {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 155px;
-  left: -100%;
-  color: white;
-  transition: all 0.5s ease;
+    background-image: url(./img/candy_boy.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% / 2);
+    height: 400px;
+    border: solid 1px black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
 #candy:hover .ranking-text {
-  left: 35%;
+    left: 35%;
 }
 
 #candy:hover .fileter {
-  right: 0;
-
+    right: 0;
 }
+
+
+/* -----------------------牛乳--------------------- */
+#milk {
+    background-image: url(./img/milk_bin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% / 2);
+    height: 400px;
+    border: solid 1px black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#milk:hover .ranking-text {
+    left: 35%;
+}
+
+#milk:hover .fileter {
+    right: 0;
+}
+
+/* -----------------アルコール-------------------- */
+#alcohol {
+    background-image: url(./img/yopparai_businesswoman.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% / 2);
+    height: 400px;
+    border: solid 1px black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#alcohol:hover .ranking-text {
+    left: 35%;
+}
+
+#alcohol:hover .fileter {
+    right: 0;
+}
+
+/*------------------学力-------------------*/
+#gakuryoku {
+    background-image: url(./img/test100.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% / 2);
+    height: 400px;
+    border: solid 1px black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#gakuryoku:hover .ranking-text {
+    left: 35%;
+}
+
+#gakuryoku:hover .fileter {
+    right: 0;
+}
+
+/* ----------------アルコール1-----------------*/
+#alcohol1 {
+    background-image: url(./img/yopparai_businessman.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% / 2);
+    height: 400px;
+    border: solid 1px black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#alcohol1:hover .ranking-text {
+    left: 35%;
+}
+
+#alcohol1:hover .fileter {
+    right: 0;
+}
+
+/* ------------------出生数------------------ */
+#children {
+    background-image: url(./img/issyoumochi_akachan.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% / 2);
+    height: 400px;
+    border: solid 1px black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#children:hover .ranking-text {
+    left: 35%;
+}
+
+#children:hover .fileter {
+    right: 0;
+}
+
+/* --------------------milk1--------------------- */
+#milk1 {
+    background-image: url(./img/milk_bin.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% / 2);
+    height: 400px;
+    border: solid 1px black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#milk1:hover .ranking-text {
+    left: 35%;
+}
+
+#milk1:hover .fileter {
+    right: 0;
+}
+
+/* -----------------キャンディー1------------------- */
+#candy1 {
+    background-image: url(./img/sweets_peropero_candy_girl.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: calc(100% / 2);
+    height: 400px;
+    border: solid 1px black;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#candy1:hover .ranking-text {
+    left: 35%;
+}
+
+#candy1:hover .fileter {
+    right: 0;
+}
+
+
+
+
+/* ---------------------ランキングテキスト--------------------- */
+.ranking-text {
+    
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 155px;
+    left: 100%;
+    color: white;
+    transition: all 0.5s ease;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 22px;
+    text-align: center;
+   
+}
+
 
 /* .gogo{
   display: none;
@@ -385,45 +533,61 @@ h3 {
 
 
 
-/* ページトップに戻る */
+/* ----------------ゆるキャラhover--------------- */
+.Item {
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+#yurukyara{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+/* ------------------ページトップに戻る-------------------- */
 #page-top {
-  position: fixed;
-  bottom: 120px;
-  right: 30px;
-  line-height: 1;
-  z-index: 99;
+    margin-top: 0%;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    line-height: 1;
+    z-index: 99;
 }
 
 #page-top a {
-  background: rgb(245, 249, 2);
-  font-size: 35px;
-  width: 70px;
-  padding: 20px 1px;
-  text-align: center;
-  display: block;
-  border-radius: 99px;
-  transition: all .1s ease;
+    background:rgba(252, 21, 121, 0.603);
+    font-size: 40px;
+    width: 80px;
+    padding: 20px 1px;
+    text-align: center;
+    display: block;
+    border-radius: 99px;
+    transition: all .1s ease;
 }
 
 #page-top a:hover {
-  opacity: 0.5;
+    opacity: 0.5;
 }
 
-/* フッター */
+/* ---------------------フッター--------------------- */
 footer {
-  height: 80px;
-  background: rgba(0, 0, 0, 0.92);
-  position: relative;
-  margin-top: 200px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.92);
+    position: relative;
+    
 }
 
 footer small {
-  font-size: 15px;
-  color: rgb(241, 241, 241);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: bold;
+    
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }

@@ -1,5 +1,17 @@
 $(function () {
 
+    //メインタイトル
+    $(function () {
+        SlideAnime();
+    });
+
+    const SlideAnime = () => {
+        $(".h1").each(function () {
+            $(this).addClass("Animation");
+        })
+    }
+
+
     // ローディング画面
     var Emblem = {
         init: function (el, str) {
@@ -30,23 +42,6 @@ $(function () {
         spinner2.classList.add("loaded");
     }
 
-    // ゆるキャラhover
-    $('.Item').each(function () {
-
-        let img_off = $(this).attr('src');
-        let img_on = $(this).attr('src').replace('off', 'on');
-
-        $(this).hover(
-            function () {
-                $(this).attr('src', img_on);
-            },
-            function () {
-                $(this).attr('src', img_off);
-            }
-        );
-
-    });
-
 
     // JSの場合
     const typewriter = (param) => {
@@ -66,7 +61,6 @@ $(function () {
         speed: 100,
         string: "I AM YUKINORI FUJITA. I AM YUNA GUSHIKEN. FG_PROJECT START !",
 
-
     });
 
 
@@ -79,6 +73,8 @@ $(function () {
         $(target).addClass("current");
     })
 
+
+
     // サガ
     // $("#ranking-btn").on("mouseover",function(){
     //     $(".ranking-text").addClass("hide");
@@ -88,6 +84,23 @@ $(function () {
     //     $(".ranking-text").removeClass("hide");
     //     $(".fileter").removeClass("hide");
     // })
+
+    // ゆるキャラhover
+    $('.Item').each(function () {
+
+        let img_off = $(this).attr('src');
+        let img_on = $(this).attr('src').replace('off', 'on');
+
+        $(this).hover(
+            function () {
+                $(this).attr('src', img_on);
+            },
+            function () {
+                $(this).attr('src', img_off);
+            }
+        );
+
+    });
 
     // ページトップに戻る
     var pagetop = $('#page-top');
