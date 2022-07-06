@@ -291,6 +291,15 @@ h2 {
   margin-top: 130px;
 }
 
+/* サガ */
+#saga {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+}
+
+
 /* ------------------シガサガ--------------------- */
 #shiga-saga {
   display: flex;
@@ -312,14 +321,6 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
-}
-
-
-#saga {
-  width: 80%;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
 }
 
 /* --------------------フィルター-------------------- */
@@ -518,7 +519,7 @@ h3 {
 }
 
 #candy1:hover .ranking-text {
-    
+
   left: 35%;
 }
 
